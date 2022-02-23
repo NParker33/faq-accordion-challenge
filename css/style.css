@@ -62,7 +62,7 @@ header {
 .mobile-img img {
     width: 75%;
     position: absolute;
-    top: 50%;
+    top: -50%;
     right: 50%;
     transform: translate(50%, -30%);
 }
@@ -103,7 +103,8 @@ header {
         background: url('../assets/bg-pattern-desktop.svg');
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: -75%;
+        background-size: 60%;
+        background-position: -150px;
     }
 
     .mobile-img {
