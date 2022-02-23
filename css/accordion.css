@@ -1,0 +1,50 @@
+
+/* accordion styles */
+.accordion {
+    width: 100%;
+}
+
+.accordion-item {
+    margin: 10px;
+    color: var(--cls-very-dark-desaturated-blue);
+}
+
+.question-btn {
+    cursor: pointer;
+    border-bottom: 1px solid var(--cls-light-grayish-blue);
+    padding: 10px 0;
+    position: relative;
+    font-size: 1.1rem;
+    transition: all ease-in-out 0.2s;
+}
+
+/* add arrow icon to question buttons */
+.question-btn::after {
+    content: url('../assets/icon-arrow-down.svg');
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    transition: transform ease 0.2s;
+}
+
+.question-btn.active::after {
+    transform: rotate(180deg);
+}
+
+/* style accordion body */
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height ease-in-out 0.2s;
+}
+
+/* active and hover styles */
+.active {
+    font-weight: 700;
+    color: #000;
+}
+
+.question-btn:hover {
+    color:var(--cls-soft-red);
+    cursor: pointer;
+}
